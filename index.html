@@ -1,1 +1,59 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>p5js-es6-boilerplate</title><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"/><style>*{box-sizing:border-box}body,html{padding:0;margin:0;background:#000;overflow:hidden}marquee{position:absolute;top:0;left:0;right:0;color:#fff;font-family:VT323;font-size:56px}button{display:block}:-moz-full-screen button#fullscreen,:-ms-fullscreen button#fullscreen,:-webkit-full-screen button#fullscreen,:fullscreen button#fullscreen{display:none!important}</style><script defer="defer" src="/static/js/main.477328ec.js"></script></head><body><marquee scrollamount="20">refresh for visualiser & audio · right hand: sample position · head up/down: filter · head left/right: reverrbbb</marquee><div id="visualisation"></div><div id="video" style="position:absolute;top:0;left:0;width:100vw;height:100vh;opacity:1"></div><button id="fullscreen" style="position:absolute;right:20px;bottom:20px" onclick="fullscreen()">fullscreen</button> <button id="refresh" style="position:absolute;left:20px;bottom:20px" onclick="location.reload()">refresh</button><script type="text/javascript">let isFullscreen=!1;function fullscreen(){const e=document.documentElement,n=document.getElementById("fullscreen");null===document.fullscreenElement?(e.requestFullscreen(),n.textContent="exit fullscreen"):(document.exitFullscreen(),n.textContent="fullscreen")}</script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>p5js-es6-boilerplate</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            background: #000;
+            overflow: hidden
+        }
+
+        marquee {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            font-family: VT323;
+            font-size: 56px
+        }
+
+        button {
+            display: block
+        }
+
+        :-moz-full-screen button#fullscreen,
+        :-ms-fullscreen button#fullscreen,
+        :-webkit-full-screen button#fullscreen,
+        :fullscreen button#fullscreen {
+            display: none !important
+        }
+    </style>
+    <script defer="defer" src="/posenet-hackday/static/js/main.477328ec.js"></script>
+</head>
+
+<body>
+    <marquee scrollamount="20">refresh for visualiser & audio · right hand: sample position · head up/down: filter ·
+        head left/right: reverrbbb</marquee>
+    <div id="visualisation"></div>
+    <div id="video" style="position:absolute;top:0;left:0;width:100vw;height:100vh;opacity:1"></div><button
+        id="fullscreen" style="position:absolute;right:20px;bottom:20px" onclick="fullscreen()">fullscreen</button>
+    <button id="refresh" style="position:absolute;left:20px;bottom:20px" onclick="location.reload()">refresh</button>
+    <script
+        type="text/javascript">let isFullscreen = !1; function fullscreen() { const e = document.documentElement, n = document.getElementById("fullscreen"); null === document.fullscreenElement ? (e.requestFullscreen(), n.textContent = "exit fullscreen") : (document.exitFullscreen(), n.textContent = "fullscreen") }</script>
+</body>
+
+</html>

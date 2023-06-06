@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.477328ec.js",
-    "index.html": "/index.html",
-    "main.477328ec.js.map": "/static/js/main.477328ec.js.map"
+    "main.js": "/posenet-hackday/static/js/main.477328ec.js",
+    "index.html": "/posenet-hackday/index.html",
+    "main.477328ec.js.map": "/posenet-hackday/static/js/main.477328ec.js.map"
   },
   "entrypoints": [
     "static/js/main.477328ec.js"
